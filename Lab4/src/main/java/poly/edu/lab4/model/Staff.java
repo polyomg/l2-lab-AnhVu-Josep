@@ -17,7 +17,6 @@ import java.util.Date;
 public class Staff {
     @NotBlank(message = "Email is not emty!")
     @Email(message = "Email không đúng format")
-
     private String id;
 
     @NotBlank(message = "Name is not emty!")

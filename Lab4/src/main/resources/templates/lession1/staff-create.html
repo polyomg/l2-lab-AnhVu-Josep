@@ -20,7 +20,6 @@
     Giới tính: <input type="radio" th:field="*{gender}" value="true">Nam
     <input type="radio" th:field="*{gender}" value="false">Nữ
     <i th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}" style="color:red"></i>
-
     <hr>
 
     Ngày sinh: <input type="text" th:field="*{birthday}" th:value="*{#dates.format(birthday,'MM/dd/yyyy')}">
@@ -50,13 +49,6 @@
     <button>Create</button>
 
 </form>
-
-<style>
-    i[th\\:errors] {
-        font-style: normal;
-        font-size: 0.9em;
-    }
-</style>
 
 </body>
 </html>
