@@ -32,6 +32,11 @@
   </th:block>
 </table>
 
+<p>
+  Tổng SL: <b th:text="${cart.getCount()}"></b><br>
+  Tổng tiền: <b th:text="${cart.getAmount()}"></b><br>
+</p>
+
 <br>
 <a href="/cart/clear">Clear Cart</a> |
 <a href="/item/index">Add more</a>
